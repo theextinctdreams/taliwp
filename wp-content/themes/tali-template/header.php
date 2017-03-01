@@ -61,7 +61,7 @@
 	<div id="top-phone" class="col-md-2 text-right">
 	
 		<strong>8-800-700-88-47</strong><br>
-		Звонок по России бесплатный
+		Звонок по России бесплатныйq
 	</div>
 	<!-- 
 	<div id="icons" class="col-md-7">
