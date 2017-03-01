@@ -1,0 +1,148 @@
+/*
+Theme Name: Шаблон для компании "Барнаульские тали"
+Theme URI: http://tali.ru/
+Description: Адаптивный шаблон для компании "Барнаульские тали", разработанный с использованием фреймворка Bootstrap
+Author: Ramapriya
+Author URI: http://vk.com/ramapriyadas/
+*/
+@import url('b-form.css');
+
+header {overflow:hidden; margin:10px auto;}
+
+.mainlogo {display:block; width:100%; max-width:70px; float:left; margin-right:10px; padding-left:0;}
+.title {margin:0; padding:0;}
+.title a {color:#000;}
+.mainmenu ul{float:right;}
+.mainmenu li {font-size:1.3em;}
+.mainmenu li a {color:#468eb7; text-decoration:none; font-weight:400;}
+.mainmenu li a:hover {color:#3f6b84; text-decoration:underline;}
+.mobile-menu {display:none;}
+#icons {overflow:hidden; float:right;}
+#top-phone {float:right; max-width:250px;}
+#top-nav-ul {font-size:1.3em;}
+
+.navbar .navbar-default {border:0px; background:#fff;}
+
+.container {width:95%; max-width:1770px;}
+
+
+#wrapper {overflow:hidden;}
+.banner {float:right; width:100%; max-width:1280px; overflow:hidden;margin-bottom:10px; }
+
+.content {float:right; width:90%; max-width:1280px;}
+.cathome {margin:10px auto;}
+/* TABLE */
+.tdesc {max-width:800px; margin:20px auto;}
+.table-container {overflow:hidden; margin:0 auto; max-width:1200px;}
+.table-block-left {float:left; overflow:hidden;}
+.table-block-right {float:right; overflow:hidden;}
+.table-image {width:100%; max-width:130px; float:left;}
+.table-description {float:right;}
+
+
+/* SIDEBAR */
+#sidebar {overflow:hidden;}
+.sidebar-field {overflow:hidden; background:#F7F7EF; border:1px #ccc solid; border-radius:5px; -webkit-border-radius:5px; -moz-border-radius:5px; -o-border-radius:5px; margin: 15px auto; padding: 10px; text-align:center;}
+
+.sidebar-field img {margin-right:5px;}
+.sidebar-box { overflow:hidden; margin:5px auto; padding: 5px 15px;}
+.phone-left {float:left; max-width:200px; padding-left:30px;}
+.phone-right {float:right; max-width:200px; padding-right:30px;}
+.sidear-text {overflow:hidden; margin:2px auto; padding:5px;}
+.form-search {margin:5px; max-width:200px;}
+
+/* /SIDEBAR */
+.tali-price-cont {overflow:hidden; max-width:990px;margin:0 auto;}
+.tali-price-list {margin:5px; background:#f7f7ef;}
+hr {margin:5px; width:99%; height:1px; background:#ccc; margin:5px auto;}
+/* FOOTER */
+/*#footer {position:absolute;bottom:0; overflow:hidden; width:100%; background:#cccccc;}*/
+#footer a {color:#333333; text-decoration:none;}
+#footer a:hover {text-decoration:underline;}
+#copyright {margin: 10px auto; padding: 5px; text-align:center;}
+#footer-phone {float:right; max-width:250px; align-items:flex-end;}
+.phone-left-f {float:left; padding-left:30px;}
+.phone-right-f {float:right; padding-right:30px; text-align:right;}
+.s-icons {margin:10px auto; max-width:90px;}
+/* /FOOTER */
+
+@media screen and (max-width:1645px) {
+.phone-left, .phone-right {float:none!important; text-align:center; margin:0 auto; padding:5px;}
+.mainmenu li {font-size:1.3em;}
+
+}
+
+@media screen and (min-width:1570px) {
+	.mainmenu li a {margin-right:20px;}
+}
+
+@media screen and (max-width:1290px) {
+	.mainmenu li {font-size:1em;}
+}
+
+@media screen and (max-width:1240px) {
+
+#top-phone{display:none;}
+}
+
+@media screen and (max-width:1205px) {
+
+.mainlogo {display:none;}
+.mainmenu ul {float:left!important;}
+.mainmenu li {font-size:1em;}
+
+}
+
+@media screen and(max-width:1125px) {
+.mainmenu li {font-size:1em;}
+
+}
+
+@media screen and(max-width:1030px) {
+.sidebar-text h3 {font-size:0.7em;}
+}
+
+@media screen and (max-width:990px) {
+.banner {display:none;}
+
+.mainlogo {display:block;}
+.img-responsive {margin:5px auto;}
+}
+
+@media screen and (max-width:975px) {
+.fcent {display:none;}
+
+@media screen and (max-width:953px) {
+#icons {float:none!important; margin:0 auto;}
+}
+
+	@media screen and (max-width:768px) {
+		.form-inline, .form-search, .but-search {float:none!important; margin:5px auto;}
+	}
+	
+@media screen and (max-width:768px) {
+.mainlogo {display:none;}
+.mobile-menu {display:block; width:128px; height:128px; float:left!important; overflow:hidden; padding:5px; margin:10px auto;}
+.mainmenu {display:none;}
+.mobile-menu a {color:#fff; font-size:1.5em;}
+.colmenu {top:0; bottom:0;}
+.colmenu li a {color:#222; text-align:right; padding: 0.5em;}
+	
+	
+.col-md-7 {display:none;}
+.banner {display:none;}
+#icons {display:none;}
+.table {display:none;}
+#sidebar {float:none!important; margin:0 auto;}
+#copyright, #footer-phone, .phone-left-f, .phone-right-f {float:none!important; text-align:center; margin:0 auto;}
+}
+
+@media screen and (max-width:485px) {
+
+.mobile-menu {margin:5px auto;}
+
+}
+	
+@media screen and (max-width:300px) {
+	.title h1 {font-size:0.4em;}	
+}

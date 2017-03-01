@@ -1,0 +1,35 @@
+<style>
+	@import url('b-form.css');
+</style>
+<div id="b-order"> 
+<div class="b-message">
+Рабочее время у нас закончилось, заполните форму <br> рабочий день, у нас начнется через <span id=time> </span>
+</div>
+<form id="form-sidebar">
+<table class="b-siderbar__form-ticket">
+        <tr>
+            <td>
+                <input id="useremail" class="b-siderbar__input" onblur='if(this.value=="") this.value="ваш email"'  onfocus='if(this.value=="ваш email") this.value=""' name="useremail" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="b-siderbar__label"  for="usertext"> Сообщение</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <textarea class="b-siderbar__textarea" id="usertext" name="usertext"> </textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button class="b-sidebar__btn" type="submit" onclick="yaCounter4229386.reachGoal('notwork'); return true;"> Отправить</button>
+            </td>
+        </tr>
+    </table>
+</form>
+
+</div>		
+<div class="b-siderbar__succes"> Спасибо за заявку </div>		
+</div>

@@ -1,0 +1,204 @@
+#tali_rus{
+background-image: url(http://tali.ru/js/icons/img/rus_telfer.png);
+background-repeat: no-repeat;
+width: 60px;
+height: 52px;
+background-position: center 2px;
+}
+#tali_rus:hover{
+background-position: center -50px;
+}
+#tali_rus_h{
+background-image: url(http://tali.ru/js/icons/img/rus_telfer.png);
+background-repeat: no-repeat;
+width: 60px;
+height: 52px;
+background-position: center -50px;
+}
+#tali_rus_zap{
+background-image: url(http://tali.ru/js/icons/img/rus_zap.png);
+background-repeat: no-repeat;
+width: 80px;
+height: 52px;
+background-position: center 2px;
+}
+#tali_rus_zap:hover{
+background-position: center -50px;
+}
+#tali_rus_zap_h{
+background-image: url(http://tali.ru/js/icons/img/rus_zap.png);
+background-repeat: no-repeat;
+width: 80px;
+height: 52px;
+background-position: center -50px;
+}
+#tali_bolg{
+background-image: url(http://tali.ru/js/icons/img/bolg_telfer.png);
+background-repeat: no-repeat;
+width: 60px;
+height: 52px;
+background-position: center 2px;
+}
+#tali_bolg:hover{
+background-position: center -50px;
+}
+#tali_bolg_h{
+background-image: url(http://tali.ru/js/icons/img/bolg_telfer.png);
+background-repeat: no-repeat;
+width: 60px;
+height: 52px;
+background-position: center -50px;
+}
+#tali_bolg_zap{
+background-image: url(http://tali.ru/js/icons/img/bolg_zap.png);
+background-repeat: no-repeat;
+width: 80px;
+height: 52px;
+background-position: center 2px;
+}
+#tali_bolg_zap:hover{
+background-position: center -50px;
+}
+#tali_bolg_zap_h{
+background-image: url(http://tali.ru/js/icons/img/bolg_zap.png);
+background-repeat: no-repeat;
+width: 80px;
+height: 52px;
+background-position: center -50px;
+}
+#tali_ruh{
+background-image: url(http://tali.ru/js/icons/img/ruch.png);
+background-repeat: no-repeat;
+width: 60px;
+height: 52px;
+background-position: center 2px;
+}
+#tali_ruh:hover{
+background-position: center -50px;
+}
+#tali_ruh_h{
+background-image: url(http://tali.ru/js/icons/img/ruch.png);
+background-repeat: no-repeat;
+width: 60px;
+height: 52px;
+background-position: center -50px;
+}
+#kranes{
+background-image: url(http://tali.ru/js/icons/img/kranes.png);
+background-repeat: no-repeat;
+width: 80px;
+height: 52px;
+background-position: center 2px;
+}
+#kranes:hover{
+background-position: center -50px;
+}
+#kranes_h{
+background-image: url(http://tali.ru/js/icons/img/kranes.png);
+background-repeat: no-repeat;
+width: 80px;
+height: 52px;
+background-position: center -50px;
+}
+#kranes_zap{
+background-image: url(http://tali.ru/js/icons/img/kranes_zap.png);
+background-repeat: no-repeat;
+width: 80px;
+height: 52px;
+background-position: center 2px;
+}
+#kranes_zap:hover{
+background-position: center -50px;
+}
+#kranes_zap_h{
+background-image: url(http://tali.ru/js/icons/img/kranes_zap.png);
+background-repeat: no-repeat;
+width: 80px;
+height: 52px;
+background-position: center -50px;
+}
+#gruz_magnet{
+background-image: url(http://tali.ru/js/icons/img/magnets.png);
+background-repeat: no-repeat;
+width: 60px;
+height: 52px;
+background-position: center 2px;
+}
+#gruz_magnet:hover{
+background-position: center -50px;
+}
+#gruz_magnet_h{
+background-image: url(http://tali.ru/js/icons/img/magnets.png);
+background-repeat: no-repeat;
+width: 60px;
+height: 52px;
+background-position: center -50px;
+}
+#greyfers{
+background-image: url(http://tali.ru/js/icons/img/greyfer.png);
+background-repeat: no-repeat;
+width: 60px;
+height: 52px;
+background-position: center 2px;
+}
+#greyfers:hover{
+background-position: center -50px;
+}
+#greyfers_h{
+background-image: url(http://tali.ru/js/icons/img/greyfer.png);
+background-repeat: no-repeat;
+width: 60px;
+height: 52px;
+background-position: center -50px;
+}
+#vesy{
+background-image: url(http://tali.ru/js/icons/img/vesy.png);
+background-repeat: no-repeat;
+width: 60px;
+height: 52px;
+background-position: center 2px;
+}
+#vesy:hover{
+background-position: center -50px;
+}
+#vesy_h{
+background-image: url(http://tali.ru/js/icons/img/vesy.png);
+background-repeat: no-repeat;
+width: 60px;
+height: 52px;
+background-position: center -50px;
+}
+#chertezhy{
+background-image: url(http://tali.ru/js/icons/img/chertezhy.png);
+background-repeat: no-repeat;
+width: 60px;
+height: 52px;
+background-position: center 2px;
+}
+#chertezhy:hover{
+background-position: center -50px;
+}
+#chertezhy_h{
+background-image: url(http://tali.ru/js/icons/img/chertezhy.png);
+background-repeat: no-repeat;
+width: 60px;
+height: 52px;
+background-position: center -50px;
+}
+#electrika{
+background-image: url(http://tali.ru/js/icons/img/electrika.png);
+background-repeat: no-repeat;
+width: 60px;
+height: 52px;
+background-position: center 2px;
+}
+#electrika:hover{
+background-position: center -50px;
+}
+#electrika_h{
+background-image: url(http://tali.ru/js/icons/img/electrika.png);
+background-repeat: no-repeat;
+width: 60px;
+height: 52px;
+background-position: center -50px;
+}
