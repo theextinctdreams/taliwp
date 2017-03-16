@@ -3,7 +3,7 @@
  * Шаблон обычной страницы (page.php)
  * @package WordPress
  * @subpackage your-clean-template-3
- * Template Name: Тали электрические Россия
+ * Template Name: Краны
  */
 get_header(); // подключаем header.php ?>
 
@@ -22,16 +22,16 @@ get_header(); // подключаем header.php ?>
                 <div style="background: transparent" class="col-md-12 breadcrumb"><?php if (function_exists('breadcrumbs')) breadcrumbs(); ?></div>
                 <div class="col=xs-12 visible-xs visible-sm"><img class="img-responsive" src="<?php the_field( 'main-image' ); // картинка в мобильной версии ?>" /></div>
                 <div class="col-md-9">
-                    <p><strong>Грузоподъёмность: <?php the_field( 'load-capacity' ); ?><br />
-                            Высота подъёма: <?php the_field( 'liftingheight' ); ?></strong></p>
+                    <p><?php the_field('text_intro'); ?></p>
 
 
                 </div>
                 <div class="col-md-3">
-                    <button class="fb-btn" data-toggle="modal" data-target="#myModal"><?php the_field( 'button_text' ); ?> <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/coins.png"></button>
+                    <button class="fb-btn hidden-xs hidden-sm" data-toggle="modal" data-target="#myModal">Рассчитать стоимость <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/coins.png"></button>
 
-                    <button class="fb-btn"><a style="color:#fff; text-decoration: none" href="<?php echo esc_url( home_url( '/' ) ); ?>/contacts">Контакты <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/phone.png"></a></button>
                     <button class="fb-btn visible-xs visible-sm"  data-toggle="modal" data-target="#myModal2">Оставить заявку</button>
+                    <button class="fb-btn"><a style="color:#fff; text-decoration: none" href="<?php echo esc_url( home_url( '/' ) ); ?>/contacts">Контакты <img class="hidden-xs hidden-sm" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/phone.png"></a></button>
+
                 </div>
 
                 <div class="col-md-12 hidden-xs hidden-sm">
@@ -39,11 +39,17 @@ get_header(); // подключаем header.php ?>
                         <img src="<?php the_field( 'image1' ); ?>" height="400" /> <img src="<?php the_field( 'image2' ); ?>" height="400" />
 
                     </div>
-                    <div style="display: flex; justify-content: center;">
-                        <?php the_field( 'table' ); ?>
-                    </div>
+
                 </div>
 
+                <div class="col-md-12 hidden-xs hidden-sm">
+
+                    <?php the_field('table'); ?>
+
+                </div>
+                <div class="col-md-12">
+                    <h4 class="text-center"><span style="color:#ff0000">ОБРАТИТЕ ВНИМАНИЕ!</span><br class="visible-xs visible-sm" /> Рисунки и технические характеристики не определяют конструкцию крана!</h4>
+                </div>
                 <div style="margin: 20px;" class="col-md-12">
                     <h4>Технические характеристики:</h4>
                     <table style="border: 1px solid #fff!important; padding: 5px;" align="center"class="table-page table-hover table-striped visible-lg visible-md visible-sm visible-xs">
@@ -51,6 +57,10 @@ get_header(); // подключаем header.php ?>
                             <tr>
                                 <td width="70%">Грузоподъёмность:</td>
                                 <td><?php the_field( 'load-capacity' ); ?></td>
+                            </tr>
+                            <tr>
+                                <td width="70%">Длина пролёта:</td>
+                                <td><?php the_field( 'span' ); ?></td>
                             </tr>
                             <tr>
                                 <td width="30%">Высота подъёма:</td>
@@ -61,42 +71,32 @@ get_header(); // подключаем header.php ?>
                                 <td><?php the_field( 'lifting-speed' ); ?></td>
                             </tr>
                             <tr>
-                                <td>Скорость передвижения:</td>
-                                <td><?php the_field( 'movement-speed' ); ?></td>
+                                <td>Скорость передвижения крана, м/мин. (м/сек.):</td>
+                                <td><?php the_field( 'crane_move' ); ?></td>
                             </tr>
                             <tr>
-                                <td>Группа режима работы по ИСО 4301/ГОСТ 25853:</td>
-                                <td><?php the_field( 'iso-4301' ); ?></td>
+                                <td>Скорость передвижения тали, м/мин. (м/сек.):</td>
+                                <td><?php the_field( 'hoist_move' ); ?></td>
+                            </tr>
+                            <tr>
+                                <td>Подкрановый путь:</td>
+                                <td><?php the_field( 'runway' ); ?></td>
                             </tr>
 
+                            <tr>
+                                <td>Установленная мощность:</td>
+                                <td><?php the_field( 'power' ); ?></td>
+                            </tr>
+
+                            <tr>
+                                <td>Суммарная мощность:</td>
+                                <td><?php the_field( 'pwr_sum' ); ?></td>
+                            </tr>
                             <tr>
                                 <td>Температурный режим:</td>
                                 <td><?php the_field( 'temperature' ); ?></td>
                             </tr>
-                            <tr>
-                                <td>Установленная мощность механизма:</td>
-                                <td><?php the_field( 'power' ); ?></td>
-                            </tr>
-                            <tr>
-                                <td>Кратность полиспаста:</td>
-                                <td><?php the_field( 'folding_speed' ); ?></td>
-                            </tr>
-                            <tr>
-                                <td>Питающее напряжение:</td>
-                                <td><?php the_field( 'voltage' ); ?></td>
-                            </tr>
 
-                            <tr>
-                                <td>Монорельсовый путь ГОСТ 19425:</td>
-                                <td><?php the_field( 'monorail-track' ); ?></td>
-                            </tr>
-                            <tr>
-                                <td>Степень защиты электрооборудования:</td>
-                                <td><?php the_field( 'protection' ); ?></td>
-                            </tr><tr>
-                                <td>Способ подвода к тали:</td>
-                                <td>гибкий кабель</td>
-                            </tr>
                         </tbody>
                     </table>
                 </div>

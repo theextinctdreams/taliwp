@@ -34,7 +34,20 @@
 		<a style="color:#000" href="index.html"><h2 class="title">Барнаульские тали</h2></a>
 	</div>
 	<div class="col-md-6">
-		<ul class="list-inline mainmenu text-center">
+
+        <div class="mobile-menu">
+            <h3 class="text-center"><a data-toggle="collapse" data-target="#colmenu">МЕНЮ</a></h3>
+            <ul id="colmenu" class="collapse list-unstyled text-center">
+                <li><a href="about.html">О компании</a></li>
+                <li><a href="catalog.html">Продукция</a></li>
+                <li><a href="price-list.html">Прайс-лист</a></li>
+                <li><a href="">Заявка</a></li>
+                <li><a href="">Доставка</a></li>
+                <li><a href="">Контакты</a></li>
+            </ul>
+        </div>
+
+		<ul id="colmenu" class="collapse list-inline mainmenu text-center">
 		  <li><a href="about.html">О компании</a></li>
 		  <li><a href="catalog.html">Продукция</a></li>
 		  <li><a href="price-list.html">Прайс-лист</a></li>
@@ -67,17 +80,7 @@
 	</div>  -->
 	
 	
-	<div class="mobile-menu">
-		<h3 class="text-center"><a data-toggle="collapse" data-target="#colmenu">МЕНЮ</a></h3>
-		<ul id="colmenu" class="collapse list-unstyled text-center">
-			  <li><a href="about.html">О компании</a></li>
-			  <li><a href="catalog.html">Продукция</a></li>
-			  <li><a href="price-list.html">Прайс-лист</a></li>
-			  <li><a href="">Заявка</a></li>
-			  <li><a href="">Доставка</a></li>
-			  <li><a href="">Контакты</a></li>
-  		</ul>
-	</div>
+
 	
 </header>
 </div>

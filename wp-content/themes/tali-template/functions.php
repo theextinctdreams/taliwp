@@ -126,7 +126,8 @@ if (!function_exists('add_styles')) { // если ф-я уже есть в до�
 	    wp_enqueue_style( 'bs', get_template_directory_uri().'/css/bootstrap.min.css' ); // бутстрап
 		wp_enqueue_style( 'main', get_template_directory_uri().'/style.css' ); // основные стили шаблона
 		wp_enqueue_style( 'tali', get_template_directory_uri().'/tali.css' ); // кастомные стили шаблона
-        wp_enqueue_style( 'tali', get_template_directory_uri().'/css/icons.css' ); // иконки
+        wp_enqueue_style( 'cform7', get_template_directory_uri().'/cform7.css' ); // кастомные плагина Contact Form 7
+        wp_enqueue_style( 'icons', get_template_directory_uri().'/css/icons.css' ); // иконки
 	}
 }
 
@@ -198,7 +199,7 @@ function breadcrumbs() {
     $sep = '›'; // разделитель между "крошками"
     $sep_before = '<span class="sep">'; // тег перед разделителем
     $sep_after = '</span>'; // тег после разделителя
-    $show_home_link = 1; // 1 - показывать ссылку "Главная", 0 - не показывать
+    $show_home_link = 0; // 1 - показывать ссылку "Главная", 0 - не показывать
     $show_on_home = 0; // 1 - показывать "хлебные крошки" на главной странице, 0 - не показывать
     $show_current = 1; // 1 - показывать название текущей страницы, 0 - не показывать
     $before = '<span class="current">'; // тег перед текущей "крошкой"
@@ -363,6 +364,5 @@ function breadcrumbs() {
 
     }
 } // end of breadcrumbs()
-
 
 ?>

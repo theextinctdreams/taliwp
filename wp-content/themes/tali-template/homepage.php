@@ -1,6 +1,6 @@
 <?php
 /**
- * Шаблон обычной страницы (page.php)
+ * Шаблон главной страницы (homepage.php)
  * @package WordPress
  * @subpackage your-clean-template-3
  */
@@ -11,7 +11,7 @@ get_header(); // подключаем header.php ?>
 		<div class="banner"><img class="img-responsive" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/background-header.jpg" /></div>
 	
 			<div class="row">
-                <div class="col-md-12 breadcrumb"><?php if (function_exists('breadcrumbs')) breadcrumbs(); ?></div>
+
 				<div class="col-md-12"><h1 class="title-post"><?php the_title(); // заголовок поста ?></h1></div>
                 <div class="col-md-12">
                     <?php if ( have_posts() ) while ( have_posts() ) : the_post(); // старт цикла ?>

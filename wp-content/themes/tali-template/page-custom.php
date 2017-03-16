@@ -3,7 +3,7 @@
  * Страница с кастомным шаблоном (page-custom.php)
  * @package WordPress
  * @subpackage your-clean-template-3
- * Template Name: Страница с кастомным шаблоном
+ * Template Name: Страница с кастомным шаблоном!!!
  */
 get_header(); // подключаем header.php ?>
 <section>

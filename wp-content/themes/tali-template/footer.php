@@ -7,22 +7,27 @@
 ?>
 <!-- BEGIN FOOTER -->
 
+
+
 <hr />		
 <div id="footer" class="container">
 		<div class="row">
-            <div class="col-md-3">
+            <div class="col-md-6">
             	<div class="phone-left-f">
-					<p>1999-2017 &copy; ТД "Барнаульские тали"<br>
-				Все права защищены.</p>
+                    <dl>
+                        <dt>1999-<?= date('Y'); ?> &copy; ТД "Барнаульские тали"</dt>
+				        <dd>Все права защищены.</dd>
+                    </dl>
 				</div>
             </div>
-            <div class="col-md-6 fcent"></div>
-		<div class="col-md-3">
-           <div class="phone-right-f"><p><strong>8-800-700-88-47</a></strong><br />
-			Звонок по России бесплатный</p>
-           </div>
-            
-        </div>    
+
+            <div class="col-md-6 fcent hidden-xs hidden-sm text-right">
+                <dl>
+                    <dt>8-800-700-88-47</dt>
+                    <dd>Звонок по России бесплатный</dd>
+                </dl>
+            </div>
+
         </div>
     	
 		
