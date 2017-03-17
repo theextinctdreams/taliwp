@@ -36,7 +36,8 @@ get_header(); // подключаем header.php ?>
 
                 <div class="col-md-12 hidden-xs hidden-sm">
                     <div style="display:flex; justify-content: center; height: 400px;">
-                        <img src="<?php the_field( 'image1' ); ?>" height="400" /> <img src="<?php the_field( 'image2' ); ?>" height="400" />
+
+                        <a href="<?php the_field('image1'); ?>" data-lightbox="product" ><img src="<?php the_field( 'image1' ); ?>" height="350" /></a> <a href="<?php the_field( 'image2' ); ?>" data-lightbox="product"><img src="<?php the_field( 'image2' ); ?>" height="350" /></a>
 
                     </div>
                     <div style="display: flex; justify-content: center;">
@@ -44,9 +45,9 @@ get_header(); // подключаем header.php ?>
                     </div>
                 </div>
 
-                <div style="margin: 20px;" class="col-md-12">
+                <div style="margin-top: 20px;" class="col-md-12">
                     <h4>Технические характеристики:</h4>
-                    <table style="border: 1px solid #fff!important; padding: 5px;" align="center"class="table-page table-hover table-striped visible-lg visible-md visible-sm visible-xs">
+                    <table style="border: 1px solid #fff!important; padding: 5px;" class="table-page table-hover table-striped visible-lg visible-md visible-sm visible-xs">
                         <tbody>
                             <tr>
                                 <td width="70%">Грузоподъёмность:</td>
@@ -137,15 +138,16 @@ get_header(); // подключаем header.php ?>
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/close.png"></button>
-                    <h4 class="modal-title" id="myModalLabel">Запрос цены<br />
-                        <?php the_title(); // заголовок поста ?></h4>
+                <div class=" winmodal">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/close.png"></button>
+                        <h4 class="modal-title" id="myModalLabel">Запрос цены<br />
+                            <?php the_title(); // заголовок поста ?></h4>
+                    </div>
+                    <div class="modal-body">
+                        <?php the_field( 'modal' ); ?>
+                    </div>
                 </div>
-                <div class="modal-body">
-                    <?php the_field( 'modal' ); ?>
-                </div>
-
             </div>
         </div>
     </div>

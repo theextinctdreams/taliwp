@@ -36,7 +36,7 @@ get_header(); // подключаем header.php ?>
 
                 <div class="col-md-12 hidden-xs hidden-sm">
                     <div style="display:flex; justify-content: center; height: 350px;">
-                        <img src="<?php the_field( 'image1' ); ?>" height="350" /> <img src="<?php the_field( 'image2' ); ?>" height="350" />
+                        <a href="<?php the_field('image1'); ?>" data-lightbox="product" ><img src="<?php the_field( 'image1' ); ?>" height="350" /></a> <a href="<?php the_field( 'image2' ); ?>" data-lightbox="product"><img src="<?php the_field( 'image2' ); ?>" height="350" /></a>
 
                     </div>
                     <div style="display: flex; justify-content: center;">
